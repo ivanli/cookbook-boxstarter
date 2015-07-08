@@ -15,7 +15,7 @@ end
 template "#{node['boxstarter']['tmp_dir']}/setup.bat" do
   source "ps_wrapper.erb"
   variables({
-    :command => "-command \". '%~dp0bootstrapper.ps1';Get-Boxstarter #{version}-force\""
+    :command => "-command \". '%~dp0bootstrapper.ps1';Get-Boxstarter #{version} -force\""
   })
 end
 
